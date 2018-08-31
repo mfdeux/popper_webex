@@ -42,8 +42,7 @@ SciHub domains rotate often. If the domain in your settings returns an error, pe
 
 Credit
 ----------
-Icons made by Freepik (www.flaticon.com), license through CC 3.0 BY
-Based in part on [Sci-Hub-Fy](https://github.com/allanino/sci-hub-fy)
+Icons made by Freepik (www.flaticon.com), license through CC 3.0 BY. Based in part on [Sci-Hub-Fy](https://github.com/allanino/sci-hub-fy)
 
 Note
 ----------
