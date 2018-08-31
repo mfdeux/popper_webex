@@ -21,7 +21,7 @@ chrome.runtime.onInstalled.addListener(async () => {
   })
 })
 
-// Setup extension click action
+// Setup browser button click action
 chrome.browserAction.onClicked.addListener(async (tab) => {
   let browserActionPreference = await retrieveBrowserActionPreference()
   switch (browserActionPreference) {
@@ -72,7 +72,7 @@ const retrieveSciHubDomain = async () => {
 }
 
 /**
- * Retrieve SciHub domain from storage
+ * Retrieve browser action from storage
  */
 const retrieveBrowserActionPreference = async () => {
   let data = await chrome.storage.sync.get('browserAction')
@@ -80,7 +80,7 @@ const retrieveBrowserActionPreference = async () => {
 }
 
 /**
- *
+ * Convert article/abstract URL into SciHub equivalent URL
  * @param {string} articleUrl
  * @param {string} sciHubDomain
  */
@@ -92,8 +92,8 @@ const makeSciHubUrl = async (articleUrl, sciHubDomain = null) => {
 }
 
 /**
- *
- * @param {*} articleUrl
+ * Open SciHub URL in new tab
+ * @param {string} articleUrl
  */
 const sciHubUrlToNewTab = async (articleUrl) => {
   let sciHubUrl = await makeSciHubUrl(articleUrl)
@@ -101,9 +101,9 @@ const sciHubUrlToNewTab = async (articleUrl) => {
 }
 
 /**
- *
+ * Open SciHub URL in current tab
  * @param {*} tab
- * @param {*} articleUrl
+ * @param {string} articleUrl
  */
 const sciHubUrlToCurrentTab = async (tab, articleUrl) => {
   let sciHubUrl = await makeSciHubUrl(articleUrl)
@@ -111,8 +111,8 @@ const sciHubUrlToCurrentTab = async (tab, articleUrl) => {
 }
 
 /**
- *
- * @param {*} articleUrl
+ * Test whether article URL is a valid SciHub article
+ * @param {string} articleUrl
  */
 const testSciHubUrl = async (articleUrl) => {
   let sciHubUrl = await makeSciHubUrl(articleUrl)
@@ -134,7 +134,7 @@ const textToDOM = (textResp) => {
 }
 
 /**
- *
+ * Extract article PDF URL from SciHub
  * @param {string} articleUrl
  */
 const extractSciHubPDFUrl = async (articleUrl) => {
@@ -151,8 +151,8 @@ const extractSciHubPDFUrl = async (articleUrl) => {
 }
 
 /**
- *
- * @param {*} articleUrl
+ * Download article PDF from SciHub using browser downloads
+ * @param {string} articleUrl
  */
 const downloadSciHubPDF = async (articleUrl) => {
   let pdfUrl = await extractSciHubPDFUrl(articleUrl)
