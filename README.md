@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src ="https://raw.githubusercontent.com/username/projectname/branch/path/to/icon128.png" alt="Popper Web Extension"/></div>
+<div style="text-align:center"><img src ="https://raw.githubusercontent.com/mfdeux/popper_webex/master/src/resources/icons/icon128.png" alt="Popper Web Extension"/></div>
 
 Popper
 ==========
