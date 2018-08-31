@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Options for the Popper Extension</title>
+  <link rel="stylesheet" href="../css/options.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <form>
+    <div>
+      <h2>SciHub domain</h2>
+      <input placeholder="Domain (e.g. sci-hub.tw)" type="text" id="domain">
+    </div>
+    <div>
+      <h2>Browser Button Action</h2>
+      <select id="browser-action" required>
+        <option value="newTab">New Tab</option>
+        <option value="currentTab">Current Tab</option>
+        <option value="downloadPDF">Download PDF</option>
+      </select>
+    </div>
+    <button id="save">Save</button>
+  </form>
+
+  <div class="repo">
+    <a href="https://github.com/mfdeux/popper_webex" target="_blank">
+      <i class="fa fa-github"></i>View on Github</a>
+  </div>
+
+  <script src="../js/options.js"></script>
+</body>
+
+</html>

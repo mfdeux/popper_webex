@@ -1,0 +1,50 @@
+h2 {
+  font-size: 12px;
+}
+
+form {
+  width: 100%;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+input {
+  margin: 10px 0px;
+  width: 300px;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+select {
+  margin: 10px 0px;
+  width: 300px;
+}
+
+button {
+  border: none;
+  background: #303f9d;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 15px 0px 0px 0px;
+  padding: 6px;
+  width: 100px;
+  color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  background:#0c209e;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.repo {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.repo i{
+  margin: 0px 5px;
+}

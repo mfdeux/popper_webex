@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Popper",
+  "description": "Free access to scientific articles through Sci-Hub service.",
+  "version": "1.6",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "storage",
+    "http://*/*",
+    "https://*/*",
+    "downloads"
+  ],
+  "icons": {
+    "16": "resources/icons/icon16.png",
+    "32": "resources/icons/icon32.png",
+    "64": "resources/icons/icon64.png",
+    "128": "resources/icons/icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "resources/js/async-await.js",
+      "resources/js/background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {},
+  "options_ui": {
+    "page": "resources/html/options.html"
+  }
+}
